@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jatin Raghuwanshi</title>
+<meta name="description" content="Final-year student at IISER Pune focused on Mathematical Physics, with work in computational finance and biology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#f7f8fc;--text:#1f2433;--muted:#5d6577;--line:#e4e8f0;
+--indigo:#4f46e5;--teal:#0d9488;--orange:#ea580c;--pink:#db2777;--amber:#d97706;--blue:#2563eb;--green:#16a34a;--violet:#7c3aed}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;font-size:17px}
+a{color:var(--indigo);text-decoration:none;font-weight:500}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--indigo);outline-offset:2px}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;line-height:1.25}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+.bar{height:5px;background:linear-gradient(90deg,var(--indigo),var(--blue),var(--teal),var(--green),var(--amber),var(--orange),var(--pink),var(--violet))}
+header.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+.logo{font-family:'Source Serif 4',serif;font-weight:700;color:var(--text)}
+nav a{margin-left:20px;font-size:15px;color:var(--muted)}
+nav a:nth-child(1):hover{color:var(--indigo)}nav a:nth-child(2):hover{color:var(--teal)}nav a:nth-child(3):hover{color:var(--orange)}nav a:nth-child(4):hover{color:var(--pink)}
+nav a:hover{text-decoration:none}
+
+.herobg{background:linear-gradient(135deg,#eef2ff 0%,#ecfeff 45%,#fff7ed 100%)}
+.hero{padding:64px 0;display:grid;grid-template-columns:1fr 220px;gap:44px;align-items:center}
+.hero h1{font-size:2.7rem;margin-bottom:4px;color:var(--indigo)}
+.hero .role{color:var(--teal);font-weight:600;font-size:1.1rem;margin-bottom:18px}
+.hero p{margin-bottom:12px;max-width:560px}
+.btns{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:9px 18px;border-radius:5px;font-size:15px;color:#fff}
+.btn:hover{text-decoration:none;opacity:.9}
+.b1{background:var(--indigo)}.b2{background:var(--teal)}.b3{background:var(--orange)}
+.photo{width:220px;aspect-ratio:3/4;background:#fff;border:2px dashed #b9c0f5;border-radius:8px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:14px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+section.alt{background:var(--soft)}
+section h2{font-size:1.75rem;margin-bottom:8px;display:inline-block;padding-bottom:6px;border-bottom:4px solid var(--c)}
+section .sub{color:var(--muted);margin:10px 0 28px}
+#leadership{--c:var(--indigo)}#projects{--c:var(--teal)}#hobbies{--c:var(--orange)}#contact{--c:var(--pink)}
+
+.item{--c:var(--indigo);background:#fff;border:1px solid var(--line);border-left:5px solid var(--c);border-radius:6px;padding:20px 22px;margin-bottom:22px}
+.c1{--c:var(--indigo)}.c2{--c:var(--teal)}.c3{--c:var(--orange)}.c4{--c:var(--pink)}.c5{--c:var(--blue)}.c6{--c:var(--green)}.c7{--c:var(--amber)}.c8{--c:var(--violet)}
+.head{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:baseline}
+.item h3{font-size:1.15rem}
+.date{color:var(--c);font-weight:600;font-size:14.5px}
+.meta{color:var(--muted);font-size:15.5px;margin:3px 0 8px}
+.item p{margin-bottom:8px}
+.item ul{margin:6px 0 8px 20px}.item li{margin-bottom:3px}
+.item h4{font-size:1rem;margin:18px 0 6px;color:var(--c);font-family:'Source Sans 3',sans-serif;font-weight:600}
+.links{margin-top:8px;font-size:15px}.links a{margin-right:18px;color:var(--c)}
+.tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:13px;color:var(--c);background:color-mix(in srgb,var(--c) 10%,#fff);border:1px solid color-mix(in srgb,var(--c) 35%,#fff);padding:2px 10px;border-radius:12px;font-weight:500}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:8px}
+.ph{aspect-ratio:4/3;background:color-mix(in srgb,var(--c) 7%,#fff);border:2px dashed color-mix(in srgb,var(--c) 50%,#fff);border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;color:var(--muted);font-size:13.5px;overflow:hidden}
+.ph.slide{aspect-ratio:16/9}
+.ph.video{aspect-ratio:16/9;grid-column:1/-1;max-width:560px}
+.ph img,.ph video,.ph iframe{width:100%;height:100%;object-fit:cover;border:0;border-radius:4px}
+.fav{border-left:4px solid var(--c);background:color-mix(in srgb,var(--c) 7%,#fff);padding:12px 16px;border-radius:0 6px 6px 0;color:var(--muted);font-size:15px}
+
+.contact p{margin-bottom:6px}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14.5px}
+@media(max-width:700px){.hero{grid-template-columns:1fr;padding:40px 0}.photo{width:180px;order:-1}.hero h1{font-size:2.1rem}nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top">Jatin Raghuwanshi</a>
+  <nav><a href="#leadership">Leadership</a><a href="#projects">Projects</a><a href="#hobbies">Hobbies</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="herobg"><div class="wrap hero">
+  <div>
+    <h1>Jatin Raghuwanshi</h1>
+    <p class="role">Final-year student, IISER Pune</p>
+    <p>I am a final-year student at IISER Pune, pursuing studies focused on Mathematical Physics, with a few topics in computational finance and biology.</p>
+    <p>I am exploring research and career opportunities. My projects and volunteering work are listed below.</p>
+    <p>My education is supported by the Mukhyamantri Medhavi Vidyarthi Yojana (MMVY), a scholarship scheme of the Government of Madhya Pradesh.</p>
+    <div class="btns">
+      <a class="btn b1" href="mailto:jatin.raghuwanhsi@students.iiserpune.ac.in">Email me</a>
+      <a class="btn b2" href="https://www.linkedin.com/in/jatin-raghuwanshi/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn b3" href="https://github.com/jatinnow" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <!-- Replace with: <img src="images/profile.jpg" alt="Jatin Raghuwanshi"> -->
+  <div class="photo">Profile photo<br>(images/profile.jpg)</div>
+</div></div>
+
+<!-- LEADERSHIP -->
+<section id="leadership"><div class="wrap">
+  <h2>Leadership and volunteering</h2>
+  <p class="sub">Clubs and events I have started and run at IISER Pune.</p>
+
+  <div class="item c1">
+    <div class="head"><h3>Founder, Pratyabhijñā | The IKS Club</h3><span class="date">Jul 2026 – Present</span></div>
+    <div class="meta">Education</div>
+    <p>Founder and coordinator of the Indian Knowledge Systems (IKS) Club at IISER Pune. I organise interdisciplinary reading groups, discussions, and debates on Indian philosophy, history of science, classical scientific traditions, linguistics, and cultural history. The club is an open platform for people across Pune to engage critically with India's intellectual and cultural heritage.</p>
+    <div class="links"><a href="https://iksiiserpune.in/" target="_blank" rel="noopener">Club website</a></div>
+
+    <h4>Introductory talk: Anvīkṣā 2026 (slides)</h4>
+    <div class="grid">
+      <!-- Replace each with: <img src="images/anviksha-slide-1.jpg" alt="Anvīkṣā 2026 slide 1"> -->
+      <div class="ph slide">Slide 1</div><div class="ph slide">Slide 2</div>
+      <div class="ph slide">Slide 3</div><div class="ph slide">Slide 4</div>
+    </div>
+
+    <h4>Photos from Anvīkṣā 2026</h4>
+    <div class="grid">
+      <!-- Replace each with: <img src="images/anviksha-1.jpg" alt="Anvīkṣā 2026"> -->
+      <div class="ph">Photo 1</div><div class="ph">Photo 2</div><div class="ph">Photo 3</div>
+    </div>
+  </div>
+
+  <div class="item c2">
+    <div class="head"><h3>Founder, CycleShare Club of IISER Pune</h3><span class="date">Jan 2026 – Present</span></div>
+    <div class="meta">Environment</div>
+    <p>I lead CycleShare, an initiative building an affordable and sustainable campus cycling ecosystem through repair and reuse. The work includes collecting, restoring, and maintaining bicycles, running cycling events, and sustainability outreach, alongside a team that is establishing and expanding the initiative.</p>
+    <div class="grid">
+      <div class="ph">Photo 1</div><div class="ph">Photo 2</div>
+    </div>
+  </div>
+
+  <div class="item c3">
+    <div class="head"><h3>Conference Organizer, Indian Knowledge System Club of IISER Pune</h3><span class="date">Mar 2025</span></div>
+    <div class="meta">Education</div>
+    <p>Organised the National Conference on Indian Knowledge Systems: Science &amp; Technology at IISER Pune, which brought together about 350 participants from across India.</p>
+    <div class="links">
+      <a href="https://iksiiserpune.in/conference-archive.html" target="_blank" rel="noopener">Conference archive website</a>
+      <a href="https://www.youtube.com/playlist?list=PLaYNVWHu5DAU&si=iXql-ANLfY6BL90X" target="_blank" rel="noopener">Conference recordings</a>
+    </div>
+
+    <h4>My 2-minute introduction at the conference</h4>
+    <div class="grid">
+      <!-- Replace with: <video controls src="videos/conference-intro.mp4"></video>
+           or a YouTube embed: <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
+      <div class="ph video">Video: conference introduction (2 min)</div>
+    </div>
+    <h4>Conference photos</h4>
+    <div class="grid"><div class="ph">Group photo</div><div class="ph">Photo 2</div></div>
+  </div>
+</div></section>
+
+<!-- PROJECTS -->
+<section id="projects" class="alt"><div class="wrap">
+  <h2>Projects</h2>
+  <p class="sub">Research, coursework projects, and independent study, newest first.</p>
+
+  <div class="item c8">
+    <div class="head"><h3>Independent Summer Project in Quantum Foundations</h3><span class="date">May 2026 – Aug 2026</span></div>
+    <p>Independent study of quantum foundations, an active and growing research field. Discussed selected topics with researchers in the area.</p>
+    <div class="tags"><span>Mathematical Physics</span><span>Quantum Foundations</span></div>
+  </div>
+
+  <div class="item c2">
+    <div class="head"><h3>Genomic Variant Landscape &amp; Population Comparison</h3><span class="date">Jan 2026 – Apr 2026</span></div>
+    <div class="meta">IISER Pune · Supervisor: Prof. Bedartha Goswami</div>
+    <p>Analysed human Y-chromosome variation using gnomAD v4.1 data. Built an end-to-end pipeline for VCF ingestion, quality filtering, genomic aggregation, population-level allele-frequency analysis, and visualisation.</p>
+    <p>Developed a Streamlit dashboard for interactive genomic exploration and benchmarked VCF and Parquet workflows for storage and analysis efficiency.</p>
+    <div class="tags"><span>Pandas</span><span>Streamlit</span><span>Genomics</span></div>
+  </div>
+
+  <div class="item c5">
+    <div class="head"><h3>Industry R&amp;D Proposal: NV-Diamond Magnetometry</h3><span class="date">Feb 2026 – Apr 2026</span></div>
+    <div class="meta">Mentor: Dr. Kunj Shyamnarayan Tandon, CEO, I-HUB Quantum Technology Foundation</div>
+    <p>Developed an industry R&amp;D proposal for wearable NV-diamond magnetometry for cardiac sensing.</p>
+    <ul>
+      <li>Analysed NV-center physics, ODMR, and MCG applications.</li>
+      <li>Designed a conceptual wearable sensor architecture and R&amp;D roadmap.</li>
+      <li>Assessed feasibility, cost, IP, regulatory pathway, and technology readiness.</li>
+    </ul>
+    <div class="tags"><span>Quantum Technology</span><span>R&amp;D</span></div>
+  </div>
+
+  <div class="item c4">
+    <div class="head"><h3>Predicting TF Binding Potential of DNA Sequences</h3><span class="date">Jan 2026 – Apr 2026</span></div>
+    <div class="meta">IISER Pune · Supervisor: Prof. Leelavati Narlikar</div>
+    <p>Developed a computational framework to predict in vivo transcription-factor binding potential from DNA sequence and chromatin accessibility data. Implemented Markov model–based classifiers for CTCF, REST, and EP300, evaluated with ROC-AUC and precision-recall metrics.</p>
+    <div class="tags"><span>Computational Genomics</span><span>Markov Models</span></div>
+  </div>
+
+  <div class="item c7">
+    <div class="head"><h3>Stochastic Calculus &amp; Neural Networks for Option Pricing</h3><span class="date">Aug 2025 – Dec 2025</span></div>
+    <div class="meta">IISER Pune · Supervisor: <a href="https://www.iiserpune.ac.in/research/department/mathematics/people/faculty/regular-faculty/anindya-goswami/273" target="_blank" rel="noopener">Prof. Anindya Goswami</a></div>
+    <ul>
+      <li>Studied Brownian motion, Itô calculus, the Black–Scholes SDE, and the Feynman–Kac formula.</li>
+      <li>Implemented neural-network-based models for option pricing and hedging.</li>
+      <li>Compared neural-network architectures and feature-engineering approaches.</li>
+    </ul>
+    <div class="links"><a href="https://drive.google.com/file/d/1t6hXT8pWXHBqCLm2JkXTDN5h3VffmD08/view?usp=drive_link" target="_blank" rel="noopener">Project report</a></div>
+    <div class="grid">
+      <!-- Replace with: <img src="images/option-pricing-1.jpg" alt="Option pricing result"> -->
+      <div class="ph">Figure / photo 1</div><div class="ph">Figure / photo 2</div>
+    </div>
+  </div>
+
+  <div class="item c6">
+    <div class="head"><h3>Independent Summer Project in Quantum Machine Learning</h3><span class="date">May 2025 – Jul 2025</span></div>
+    <ul>
+      <li>Studied quantum feature maps, VQCs, and hybrid QNN workflows.</li>
+      <li>Implemented and trained QNN example circuits.</li>
+    </ul>
+    <div class="links"><a href="https://qiskit-community.github.io/qiskit-machine-learning/tutorials/index.html" target="_blank" rel="noopener">Qiskit ML tutorials</a></div>
+  </div>
+
+  <div class="item c3">
+    <div class="head"><h3>CNN for Emotion Recognition</h3><span class="date">Jan 2025 – Apr 2025</span></div>
+    <div class="meta">IISER Pune · Supervisor: Dr. Chaitanya Guttikar</div>
+    <p>Built a lightweight CNN optimised for low-resource, real-time inference on the FER-2013 dataset. Implemented preprocessing, benchmarking, and confidence-scoring modules.</p>
+    <div class="tags"><span>CNN</span><span>Python</span><span>Computer Vision</span></div>
+    <div class="links"><a href="https://github.com/jatinnow/project_jatin_raghuwanshi" target="_blank" rel="noopener">GitHub repository</a></div>
+  </div>
+
+  <div class="item c1">
+    <div class="head"><h3>Spatiotemporal Patterning via Gene Regulatory Networks</h3><span class="date">Aug 2024 – Dec 2024</span></div>
+    <div class="meta">IISER Pune · Supervisor: <a href="https://www.iiserpune.ac.in/research/department/physics/people/fellows-and-project-scientists/fellows/ushasi-roy/483" target="_blank" rel="noopener">Prof. Ushasi Roy</a></div>
+    <ul>
+      <li>Modelled microRNA-driven epithelial–hybrid–mesenchymal transitions.</li>
+      <li>Analysed ODE-based network dynamics and stability.</li>
+      <li>Studied mechanisms enabling hybrid phenotype maintenance.</li>
+    </ul>
+    <div class="grid">
+      <!-- Replace with: <img src="images/grn-1.jpg" alt="Gene regulatory network figure"> -->
+      <div class="ph">Figure / photo 1</div><div class="ph">Figure / photo 2</div>
+    </div>
+  </div>
+
+  <div class="item c2">
+    <div class="head"><h3>Mechanical Power-Law Behavior of Cells</h3><span class="date">Aug 2024 – Sep 2024</span></div>
+    <div class="meta">IISER Pune · Supervisor: Prof. Chaitanya Athale</div>
+    <p>Presented Tsai &amp; Waugh (1993) on the mechanical power-law behavior of cells, focusing on cellular viscoelasticity and mechanical rheology.</p>
+    <div class="links"><a href="https://drive.google.com/file/d/1eb6Q8roGviLVPxp8DTo3MzSU828sXlPz/view?usp=sharing" target="_blank" rel="noopener">Presentation video</a></div>
+  </div>
+
+  <div class="item c5">
+    <div class="head"><h3>Independent Summer Study in Complex Systems</h3><span class="date">Apr 2024 – Jul 2024</span></div>
+    <div class="meta">Maximum Entropy, Renormalization &amp; Agent-Based Modeling</div>
+    <p>Self-directed study during summer break, completing three courses through Complexity Explorer. Covered statistical inference, multiscale phenomena, and emergent collective behaviour.</p>
+  </div>
+
+  <div class="item c4">
+    <div class="head"><h3>National Intellectual Property Awareness Training Program</h3><span class="date">Jul 2023</span></div>
+    <p>Training conducted as part of the National Intellectual Property Festival, July 2023. Topics included intellectual property law and valuation.</p>
+  </div>
+</div></section>
+
+<!-- HOBBIES -->
+<section id="hobbies"><div class="wrap">
+  <h2>Hobbies</h2>
+  <p class="sub">What I do outside the lab and classroom.</p>
+
+  <div class="item c6">
+    <div class="head"><h3>Trekking</h3></div>
+    <p>Treks and time in the mountains.</p>
+    <div class="grid">
+      <!-- Replace with: <img src="images/trek-1.jpg" alt="Trek photo"> -->
+      <div class="ph">Trek photo 1</div><div class="ph">Trek photo 2</div>
+    </div>
+  </div>
+
+  <div class="item c4">
+    <div class="head"><h3>Poetry</h3><span class="date">Volunteer recitation · Republic Day, IISER Pune</span></div>
+    <p>I recited a poem by Kedarnath Agarwal at the Republic Day event at IISER Pune.</p>
+    <div class="grid">
+      <!-- Replace with: <video controls src="videos/republic-day-poem.mp4"></video> -->
+      <div class="ph video">Video: Republic Day recitation (20 sec)</div>
+    </div>
+    <h4>My favourite poems</h4>
+    <div class="fav">Add your favourite poems or shayari here.</div>
+  </div>
+
+  <div class="item c3">
+    <div class="head"><h3>Vipassana meditation</h3><span class="date">Sep 2021 · 10-day silent retreat</span></div>
+    <div class="meta"><a href="https://thali.dhamma.org/nilaya/" target="_blank" rel="noopener">Dhamma Nilaya, Jaipur</a></div>
+    <p>Vipassana is a 2,500-year-old meditation technique, rediscovered by the Buddha, that teaches you to observe pain and pleasure as impermanent sensations without reacting to them. I completed a 10-day silent retreat at Dhamma Nilaya in Jaipur, rising at 4 AM and meditating until 9 PM with only brief breaks, and no devices or talking.</p>
+    <p>The experience was intense, both physically and mentally, but it changed how I work. By day 2 I could focus on my breath for over an hour, and getting through the sleepless nights around day 6 taught me resilience. Feel free to ask me anything about the practice.</p>
+    <div class="grid">
+      <div class="ph">Photo 1</div><div class="ph">Photo 2</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="sub">Open to research and career opportunities.</p>
+  <p><a href="mailto:jatin.raghuwanhsi@students.iiserpune.ac.in">jatin.raghuwanhsi@students.iiserpune.ac.in</a></p>
+  <p><a href="tel:+919753600331">+91 9753600331</a></p>
+  <p>IISER Pune, India</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Jatin Raghuwanshi</div></footer>
+</body>
+</html>
